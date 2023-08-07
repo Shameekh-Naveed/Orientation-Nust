@@ -9,6 +9,8 @@
   font-family: "Roboto", sans-serif;
 }
 
+
+
 .big-container {
   /* display: inline-block; */
   background-color: rgb(255, 255, 83);
@@ -19,6 +21,7 @@
   border-radius: 25px;
   position: relative;
 }
+
 
 .big-container:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("/assets/Big_pic.jpg");
@@ -283,4 +286,115 @@ margin-top: 8px;
 .hr-custom{
   color: black;
   margin-top: 30px;
+}
+
+@media (max-width: 40rem) {
+  body{
+    padding: 1rem 0px;
+  }
+
+  .none{
+    display: none;
+  }
+
+  .compressed{
+    width: 100%;
+    height: 10vh;
+    /* background-color: #000080; */
+    background-color:  #008080;
+    /* background-color: #FFA500; */
+    /* background-color: #B87333; */
+    color: white;
+    border-radius: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    width: 98%;
+  }
+
+  .no-bottom-radius{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+  }
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .big-container{
+    width: 98%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1rem; */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .upper,
+  .lower{
+    background-color: black;
+  }
+
+  .small-container{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #upper-container,
+  #lower-container{
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 0px;
+  }
+
+  #one,
+  #two,
+  #three,
+  #four{
+    width: 100%;
+    height: 100vh;
+  }
+
+  #one{
+    height: 90vh;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  #two{
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  #three{
+    height: 40vh;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  #four{
+    margin-left: 0px;
+    height: 40vh;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  #third-header{
+    margin-top: 50%;
+  }
+
+  .feature{
+    padding: 1.2rem;
+  }
 }

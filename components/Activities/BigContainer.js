@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from '../../styles/ActivitiesWrapper.module.css';
 
-const BigContainer = () => {
+const BigContainer = ({compress}) => {
   const [showCaption, setShowCaption] = useState(false);
 
   const handleMouseEnter = () => {
@@ -13,7 +13,7 @@ const BigContainer = () => {
   };
 
   return (
-    <div className={styles['big-container']} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className={compress ? 'none' : styles['big-container']} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       {showCaption && (
         <div className={styles.caption2} style={{ color: "white", display: "inline-block", marginTop: "5px" }}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, fugit.
